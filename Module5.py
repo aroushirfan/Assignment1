@@ -22,15 +22,12 @@ num= int(input("Enter a number: "))
 if num<2:
     print(f"{num} is not a prime number.")
 else:
-    prime= True
     for i in range(2,num):
         if num %i==0:
-            prime=False
+            print(f"{num} is not a prime number.")
             break
-    if prime:
-        print(f"{num} is a prime number.")
     else:
-        print(f"{num} is not a prime number.")
+        print(f"{num} is a prime number.")
 
 #Excercise4
 city_names=[]

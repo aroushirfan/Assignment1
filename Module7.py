@@ -1,17 +1,16 @@
 #Module7
 #Excercise1
-seasons={"winter","spring","summer","autumn"}
+seasons=("winter","spring","summer","autumn")
 month_num=int(input("Enter the month number from 1-12: "))
-if month_num in [12,1,2]:
+if month_num in[12,1,2]:
     season=seasons[0]
 elif month_num in [3,4,5]:
-    seasons= seasons[1]
+    season=seasons[1]
 elif month_num in [6,7,8]:
     season=seasons[2]
 else:
     season=seasons[3]
-print(f"The season is {season}.")
-
+print(f"The season for {month_num} is {season}.")
 #Excercise2
 names=set()
 while True:
